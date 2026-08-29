@@ -1,0 +1,918 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chirag Rathore — Project Manager</title>
+<meta name="description" content="PMP-certified project manager with 7+ years delivering technology and operations projects — a nine-project portfolio held to 93% on-time delivery.">
+<meta property="og:title" content="Chirag Rathore — Project Manager">
+<meta property="og:description" content="PMP-certified project manager. Nine-project client portfolio held to 93% on-time delivery, timelines cut 28%.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#f5f2ea" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#12161d" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Hanken+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap">
+</head>
+<body>
+<style>
+  :root {
+    --paper: #f5f2ea;
+    --paper-2: #efe9db;
+    --card: #fbf9f3;
+    --ink: #1a1c1e;
+    --ink-soft: #46484d;
+    --slate: #6a6459;
+    --line: #e2dccf;
+    --blueprint: #1f4e79;
+    --blueprint-deep: #163b5c;
+    --wash: #d8e2ea;
+    --navy: #10192a;
+    --navy-2: #1b2740;
+    --on-navy: #e9ecf2;
+    --on-navy-soft: #9aa4b8;
+
+    --serif: 'Newsreader', Georgia, 'Times New Roman', serif;
+    --sans: 'Hanken Grotesk', system-ui, -apple-system, sans-serif;
+    --mono: 'Space Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+    --maxw: 1120px;
+    --gutter: 32px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #12161d;
+      --paper-2: #161b24;
+      --card: #1a212c;
+      --ink: #eef1f5;
+      --ink-soft: #b7bdc7;
+      --slate: #8b93a1;
+      --line: #2a3340;
+      --blueprint: #7bb2e0;
+      --blueprint-deep: #a9cdec;
+      --wash: #24425c;
+      --navy: #0b111c;
+      --navy-2: #16202f;
+      --on-navy: #e9ecf2;
+      --on-navy-soft: #9aa4b8;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --paper: #12161d;
+    --paper-2: #161b24;
+    --card: #1a212c;
+    --ink: #eef1f5;
+    --ink-soft: #b7bdc7;
+    --slate: #8b93a1;
+    --line: #2a3340;
+    --blueprint: #7bb2e0;
+    --blueprint-deep: #a9cdec;
+    --wash: #24425c;
+    --navy: #0b111c;
+    --navy-2: #16202f;
+    --on-navy: #e9ecf2;
+    --on-navy-soft: #9aa4b8;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 17px;
+    line-height: 1.62;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection { background: var(--blueprint); color: #fff; }
+  a { color: inherit; }
+  img { max-width: 100%; display: block; }
+  [hidden] { display: none !important; }
+
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding-left: var(--gutter); padding-right: var(--gutter); }
+
+  .mono-label {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--blueprint);
+  }
+
+  h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: -0.02em; text-wrap: balance; margin: 0; }
+  .em {
+    font-style: italic;
+    background: linear-gradient(transparent 62%, var(--wash) 62%);
+    padding: 0 0.08em;
+  }
+
+  .btn {
+    display: inline-flex; align-items: center; gap: 0.5em;
+    font-family: var(--sans); font-weight: 600; font-size: 15px;
+    padding: 13px 22px; border-radius: 999px;
+    border: 1px solid var(--ink); cursor: pointer; text-decoration: none;
+    transition: transform 0.15s ease, background 0.15s ease, color 0.15s ease;
+  }
+  .btn-solid { background: var(--ink); color: var(--paper); }
+  .btn-solid:hover { transform: translateY(-2px); }
+  .btn-ghost { background: transparent; color: var(--ink); }
+  .btn-ghost:hover { background: var(--ink); color: var(--paper); }
+  :focus-visible { outline: 2px solid var(--blueprint); outline-offset: 2px; border-radius: 4px; }
+
+  /* ---------- nav ---------- */
+  .nav {
+    position: sticky; top: 0; z-index: 60;
+    background: color-mix(in srgb, var(--paper) 86%, transparent);
+    backdrop-filter: saturate(1.5) blur(12px);
+    -webkit-backdrop-filter: saturate(1.5) blur(12px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-top: 14px; padding-bottom: 14px; }
+  .wordmark { display: flex; align-items: center; gap: 11px; text-decoration: none; color: inherit; background: none; border: none; cursor: pointer; padding: 0; font: inherit; }
+  .monogram {
+    width: 30px; height: 30px; border-radius: 8px; flex: none;
+    background: var(--blueprint); color: #fff;
+    font-family: var(--serif); font-size: 15px; font-weight: 500;
+    display: grid; place-items: center;
+  }
+  .wordmark span { font-family: var(--serif); font-size: 20px; letter-spacing: -0.01em; }
+  .nav-links { display: flex; align-items: center; gap: 26px; }
+  .nav-links a { text-decoration: none; font-size: 15px; color: var(--ink); padding: 4px 0; position: relative; cursor: pointer; }
+  .nav-links a.cta {
+    color: var(--paper); background: var(--ink); font-weight: 600; font-size: 14px;
+    padding: 9px 15px; border-radius: 999px;
+  }
+  .nav-links a:not(.cta)::after {
+    content: ""; position: absolute; left: 0; right: 0; bottom: -2px; height: 2px;
+    background: var(--blueprint); transform: scaleX(0); transform-origin: left; transition: transform 0.2s ease;
+  }
+  .nav-links a:not(.cta):hover::after,
+  .nav-links a.active::after { transform: scaleX(1); }
+  .nav-toggle { display: none; background: none; border: 1px solid var(--line); border-radius: 8px; padding: 7px 9px; cursor: pointer; color: inherit; font: inherit; }
+
+  /* ---------- hero ---------- */
+  .hero { border-bottom: 1px solid var(--line); overflow: hidden; }
+  .hero-grid {
+    display: grid; grid-template-columns: 1.3fr 0.85fr; gap: 54px; align-items: center;
+    padding-top: 78px; padding-bottom: 70px;
+  }
+  .hero h1 { font-size: clamp(2.3rem, 5.6vw, 3.35rem); line-height: 1.07; margin-bottom: 22px; }
+  .hero p.lead { font-size: 19px; color: var(--ink-soft); max-width: 33em; margin: 0 0 28px; }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 26px; }
+  .hero-meta { display: flex; flex-wrap: wrap; gap: 8px 18px; font-family: var(--mono); font-size: 12px; color: var(--slate); letter-spacing: 0.03em; }
+  .hero-meta .dot { color: var(--blueprint); }
+  .hero-card {
+    background: var(--navy); color: var(--on-navy); border-radius: 16px; padding: 26px;
+    font-family: var(--mono); font-size: 12.5px; line-height: 1.9;
+    box-shadow: 0 24px 50px -28px rgba(16, 25, 42, 0.5);
+  }
+  .hero-card .hc-head { display: flex; justify-content: space-between; color: var(--on-navy-soft); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; margin-bottom: 16px; }
+  .hero-card .hc-row { display: flex; justify-content: space-between; gap: 14px; padding: 5px 0; border-bottom: 1px dashed rgba(255,255,255,0.12); }
+  .hero-card .hc-row:last-child { border-bottom: none; }
+  .hero-card .hc-row b { color: #fff; font-weight: 400; }
+  .hero-card .hc-tag { color: #7bb2e0; }
+
+  /* ---------- section scaffold ---------- */
+  .section { padding-top: 74px; padding-bottom: 74px; border-bottom: 1px solid var(--line); }
+  .sec-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 40px; flex-wrap: wrap; }
+  .sec-head h2 { font-size: clamp(1.7rem, 3.4vw, 2.05rem); }
+  .sec-head .mono-label { margin-bottom: 10px; display: block; }
+  .sec-head .headlink { font-family: var(--mono); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blueprint); text-decoration: none; }
+  .sec-head .headlink:hover { text-decoration: underline; }
+
+  /* ---------- stats ---------- */
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 34px; }
+  .stat { padding-top: 20px; border-top: 2px solid var(--ink); }
+  .stat .num { font-family: var(--serif); font-size: clamp(2rem, 4.6vw, 2.7rem); line-height: 1; color: var(--ink); font-variant-numeric: tabular-nums; }
+  .stat .num small { font-size: 0.5em; }
+  .stat p { margin: 12px 0 0; font-size: 14.5px; color: var(--ink-soft); }
+
+  /* ---------- case list ---------- */
+  .cases { display: flex; flex-direction: column; }
+  .case {
+    display: grid; grid-template-columns: 58px 1fr 0.7fr; gap: 28px; align-items: start;
+    padding: 34px 0; border-top: 1px solid var(--line);
+    text-decoration: none; color: inherit;
+    transition: background 0.15s ease;
+  }
+  .case:first-child { border-top: none; }
+  .case:hover { background: color-mix(in srgb, var(--blueprint) 6%, transparent); }
+  .case .idx { font-family: var(--mono); font-size: 13px; color: var(--slate); padding-top: 6px; }
+  .case h3 { font-size: 1.5rem; line-height: 1.2; margin-bottom: 10px; }
+  .case .meta { font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.04em; color: var(--slate); text-transform: uppercase; margin-bottom: 14px; }
+  .case .desc { color: var(--ink-soft); font-size: 15.5px; margin: 0 0 14px; }
+  .case .tags { display: flex; flex-wrap: wrap; gap: 7px; }
+  .case .tag { font-family: var(--mono); font-size: 11px; padding: 4px 9px; border: 1px solid var(--line); border-radius: 999px; color: var(--slate); }
+  .case .headline { font-family: var(--serif); font-size: 1.9rem; line-height: 1.05; color: var(--blueprint-deep); padding-top: 4px; }
+  .case .headline span { display: block; font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--slate); margin-top: 8px; }
+  .case .viewcta { display: inline-block; margin-top: 16px; font-family: var(--mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--blueprint); }
+
+  /* ---------- method (dark) ---------- */
+  .method { background: var(--navy); color: var(--on-navy); border-bottom: none; }
+  .method .mono-label { color: #7bb2e0; }
+  .method h2 { color: #fff; }
+  .method .lead { color: var(--on-navy-soft); max-width: 40em; font-size: 18px; margin: 0 0 44px; }
+  .principles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+  .principle { border-top: 2px solid rgba(255,255,255,0.22); padding-top: 18px; }
+  .principle .pn { font-family: var(--mono); font-size: 12px; color: #7bb2e0; letter-spacing: 0.1em; }
+  .principle h3 { color: #fff; font-size: 1.28rem; margin: 12px 0 10px; line-height: 1.22; }
+  .principle p { margin: 0; color: var(--on-navy-soft); font-size: 14.5px; }
+
+  /* ---------- transfer table ---------- */
+  .transfer .row {
+    display: grid; grid-template-columns: 0.9fr 24px 1.4fr; gap: 16px; align-items: center;
+    padding: 18px 0; border-top: 1px solid var(--line);
+  }
+  .transfer .row:last-child { border-bottom: 1px solid var(--line); }
+  .transfer .from { font-family: var(--serif); font-size: 1.12rem; font-style: italic; color: var(--ink); }
+  .transfer .arrow { color: var(--blueprint); font-family: var(--mono); }
+  .transfer .to { color: var(--ink-soft); font-size: 15px; }
+
+  /* ---------- about ---------- */
+  .about-grid { display: grid; grid-template-columns: 1.25fr 0.75fr; gap: 54px; }
+  .about-copy p { color: var(--ink-soft); margin: 0 0 18px; }
+  .about-copy p:first-child { color: var(--ink); font-size: 18px; }
+  .panel { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 22px 24px; }
+  .panel h3 { font-family: var(--sans); font-weight: 700; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--slate); margin-bottom: 14px; }
+  .panel + .panel { margin-top: 18px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip { font-size: 13px; padding: 5px 11px; border-radius: 999px; background: var(--paper-2); border: 1px solid var(--line); }
+  .cert-list { list-style: none; margin: 0; padding: 0; }
+  .cert-list li { padding: 8px 0; border-bottom: 1px solid var(--line); font-size: 14.5px; display: flex; gap: 10px; }
+  .cert-list li:last-child { border-bottom: none; }
+  .cert-list li::before { content: "\25B9"; color: var(--blueprint); }
+
+  .portrait {
+    aspect-ratio: 4 / 5; border-radius: 14px; border: 1px dashed var(--slate);
+    background: repeating-linear-gradient(-45deg, transparent, transparent 9px, color-mix(in srgb, var(--slate) 12%, transparent) 9px, color-mix(in srgb, var(--slate) 12%, transparent) 10px);
+    display: grid; place-items: center; text-align: center; margin-bottom: 18px;
+  }
+  .portrait span { font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--slate); padding: 0 16px; }
+  .portrait img { width: 100%; height: 100%; object-fit: cover; border-radius: 13px; }
+
+  .timeline { margin-top: 34px; }
+  .job { display: grid; grid-template-columns: 140px 1fr; gap: 22px; padding: 18px 0; border-top: 1px solid var(--line); }
+  .job .when { font-family: var(--mono); font-size: 12px; color: var(--slate); padding-top: 3px; }
+  .job h4 { margin: 0 0 3px; font-family: var(--sans); font-size: 15.5px; font-weight: 700; }
+  .job .org { color: var(--blueprint-deep); font-size: 14px; }
+  .job p { margin: 8px 0 0; font-size: 14px; color: var(--ink-soft); }
+
+  /* ---------- contact ---------- */
+  .contact { border-bottom: 1px solid var(--line); }
+  .contact h2 { font-size: clamp(2rem, 5vw, 3rem); line-height: 1.08; margin-bottom: 20px; }
+  .contact p { color: var(--ink-soft); max-width: 34em; margin: 0 0 30px; font-size: 18px; }
+  .contact-links { display: flex; flex-wrap: wrap; gap: 12px; }
+
+  footer { padding: 34px 0 40px; }
+  .foot-inner { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; font-family: var(--mono); font-size: 12px; color: var(--slate); letter-spacing: 0.04em; }
+  .foot-inner nav { display: flex; gap: 16px; padding: 0; }
+  .foot-inner a { text-decoration: none; color: var(--slate); cursor: pointer; }
+  .foot-inner a:hover { color: var(--ink); }
+
+  .theme-toggle {
+    background: none; border: 1px solid var(--line); border-radius: 999px;
+    font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--slate); padding: 6px 12px; cursor: pointer;
+  }
+
+  .flag { background: var(--wash); color: var(--blueprint-deep); font-family: var(--mono); font-size: 11px; padding: 1px 6px; border-radius: 4px; }
+
+  /* ---------- case detail view ---------- */
+  .case-view { padding-top: 40px; padding-bottom: 80px; }
+  .backlink { font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--blueprint); text-decoration: none; cursor: pointer; background: none; border: none; padding: 0; }
+  .cv-head { max-width: 42rem; margin: 26px 0 40px; }
+  .cv-head h1 { font-size: clamp(2rem, 5vw, 2.9rem); line-height: 1.08; margin: 12px 0 18px; }
+  .cv-head p { font-size: 18px; color: var(--ink-soft); margin: 0; }
+  .cv-meta { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; padding: 22px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); margin-bottom: 40px; }
+  .cv-meta .k { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--slate); margin-bottom: 6px; }
+  .cv-meta .v { font-size: 14.5px; }
+  .cv-metrics { display: flex; flex-wrap: wrap; gap: 40px; margin-bottom: 48px; }
+  .cv-metrics .m .mv { font-family: var(--serif); font-size: clamp(2rem, 5vw, 2.6rem); line-height: 1; color: var(--blueprint-deep); font-variant-numeric: tabular-nums; }
+  .cv-metrics .m .ml { font-size: 13px; color: var(--ink-soft); max-width: 15rem; margin-top: 8px; }
+  .cv-block { display: grid; grid-template-columns: 200px 1fr; gap: 28px; padding: 32px 0; border-top: 1px solid var(--line); }
+  .cv-block > h2 { font-size: 1.4rem; }
+  .cv-block .body p { margin: 0 0 14px; color: var(--ink-soft); max-width: 44rem; }
+  .cv-block .body p:last-child { margin-bottom: 0; }
+  .steps { display: flex; flex-direction: column; gap: 22px; }
+  .step { display: grid; grid-template-columns: 40px 1fr; gap: 16px; }
+  .step .sn { font-family: var(--mono); font-size: 12px; color: var(--blueprint); padding-top: 3px; }
+  .step h3 { font-family: var(--sans); font-weight: 700; font-size: 15.5px; margin: 0 0 5px; }
+  .step p { margin: 0; font-size: 14.5px; color: var(--ink-soft); max-width: 42rem; }
+  .takeaway { font-family: var(--serif); font-style: italic; font-size: 1.35rem; line-height: 1.45; color: var(--ink); max-width: 40rem; margin: 8px 0 0; }
+  .cv-foot { display: flex; justify-content: space-between; gap: 16px; margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--line); font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; }
+  .cv-foot button { background: none; border: none; color: var(--blueprint); cursor: pointer; font: inherit; letter-spacing: inherit; text-transform: inherit; padding: 0; }
+
+  /* ---------- reveal ---------- */
+  .reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .reveal { opacity: 1; transform: none; transition: none; }
+    .btn-solid:hover, .btn-ghost:hover { transform: none; }
+  }
+
+  /* ---------- responsive ---------- */
+  @media (max-width: 900px) {
+    :root { --gutter: 22px; }
+    .hero-grid { grid-template-columns: 1fr; gap: 34px; padding-top: 54px; padding-bottom: 52px; }
+    .hero-card { order: -1; }
+    .stats { grid-template-columns: 1fr 1fr; gap: 26px; }
+    .case { grid-template-columns: 1fr; gap: 10px; padding: 26px 0; }
+    .case .idx { padding-top: 0; }
+    .case .headline { font-size: 1.6rem; }
+    .principles { grid-template-columns: 1fr; gap: 22px; }
+    .about-grid { grid-template-columns: 1fr; gap: 30px; }
+    .job { grid-template-columns: 1fr; gap: 4px; }
+    .transfer .row { grid-template-columns: 1fr; gap: 4px; }
+    .transfer .arrow { display: none; }
+    .cv-meta { grid-template-columns: 1fr 1fr; }
+    .cv-block { grid-template-columns: 1fr; gap: 12px; }
+    .nav-links { display: none; }
+    .nav-toggle { display: block; }
+    .nav-links.open {
+      display: flex; flex-direction: column; align-items: flex-start; gap: 14px;
+      position: absolute; left: 0; right: 0; top: 100%;
+      background: var(--paper); border-bottom: 1px solid var(--line); padding: 18px var(--gutter) 24px;
+    }
+  }
+  @media (max-width: 520px) {
+    .stats, .cv-meta { grid-template-columns: 1fr; }
+  }
+</style>
+
+<div class="nav">
+  <div class="wrap nav-inner">
+    <button class="wordmark" data-nav="home" type="button">
+      <span class="monogram">CR</span>
+      <span>Chirag Rathore</span>
+    </button>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" type="button">Menu</button>
+    <div class="nav-links">
+      <a data-nav="work">Work</a>
+      <a data-nav="method">Method</a>
+      <a data-nav="about">About</a>
+      <a data-nav="contact">Contact</a>
+      <a class="cta" href="#" data-placeholder-link>LinkedIn ↗</a>
+    </div>
+  </div>
+</div>
+
+<div id="home">
+  <a id="top"></a>
+  <header class="hero">
+    <div class="wrap hero-grid">
+      <div class="reveal in">
+        <div class="mono-label">Project Delivery · Governance · Stakeholders</div>
+        <h1 style="margin-top:20px">I turn scope, risk and stakeholders into <span class="em">delivery</span> that lands on time.</h1>
+        <p class="lead">PMP&reg;-certified project manager with 7+ years planning and delivering technology and operations projects &mdash; nine-project portfolios, cross-functional teams across Infra, DevOps and ETL, and a reporting cadence that holds delivery to schedule.</p>
+        <div class="hero-actions">
+          <a class="btn btn-solid" data-nav="work">See the track record →</a>
+          <a class="btn btn-ghost" data-nav="contact">Get in touch</a>
+        </div>
+        <div class="hero-meta">
+          <span>Gurugram, Haryana</span>
+          <span class="dot">•</span>
+          <span>Open to Project / Programme Manager roles</span>
+        </div>
+      </div>
+      <div class="hero-card reveal in" aria-hidden="true">
+        <div class="hc-head"><span>RAID log</span><span>wk 32</span></div>
+        <div class="hc-row"><span>Portfolio</span><b>9 projects</b></div>
+        <div class="hc-row"><span>On-time delivery</span><b class="hc-tag">93%</b></div>
+        <div class="hc-row"><span>Open risks</span><b>4 &middot; owned</b></div>
+        <div class="hc-row"><span>Blocked</span><b>1 &middot; escalated</b></div>
+        <div class="hc-row"><span>Timeline trend</span><b class="hc-tag">−28%</b></div>
+        <div class="hc-row"><span>UAT readiness</span><b>on track</b></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="proof" class="section">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <div>
+            <span class="mono-label">Proof, not promises</span>
+            <h2>Numbers from delivered projects</h2>
+          </div>
+        </div>
+        <div class="stats reveal">
+          <div class="stat">
+            <div class="num">93<small>%</small></div>
+            <p>On-time delivery across a nine-project client portfolio, up from a slipping baseline.</p>
+          </div>
+          <div class="stat">
+            <div class="num">−28<small>%</small></div>
+            <p>Delivery timelines cut through dependency tracking, reporting cadence and issue escalation.</p>
+          </div>
+          <div class="stat">
+            <div class="num">−40<small>%</small></div>
+            <p>Turnaround time reduced on a 107-member operation, with 91% SLA adherence.</p>
+          </div>
+          <div class="stat">
+            <div class="num">+18<small>%</small></div>
+            <p>Resource utilisation gained through capacity planning across US and international teams.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <div>
+            <span class="mono-label">Selected work</span>
+            <h2>Projects where the plan met reality</h2>
+          </div>
+        </div>
+        <div class="cases" id="case-list"></div>
+      </div>
+    </section>
+
+    <section id="method" class="section method">
+      <div class="wrap">
+        <div class="sec-head reveal" style="margin-bottom:24px">
+          <div>
+            <span class="mono-label">How I run delivery</span>
+            <h2>Governance that people actually act on</h2>
+          </div>
+        </div>
+        <p class="lead reveal">Most delivery risk is visible weeks early if the plan and the RAID log are honest. The job is making the cadence tight enough that people act on what it shows &mdash; before it becomes an escalation.</p>
+        <div class="principles reveal">
+          <div class="principle">
+            <div class="pn">01</div>
+            <h3>Plan to the dependency, not the task</h3>
+            <p>A WBS with the dependency map on top of it, so the critical path is visible and slippage surfaces before it is a crisis rather than after.</p>
+          </div>
+          <div class="principle">
+            <div class="pn">02</div>
+            <h3>RAID is a living document</h3>
+            <p>Risks and issues logged, owned and dated, reviewed on a fixed weekly cadence so escalation happens on time &mdash; not once the milestone is already gone.</p>
+          </div>
+          <div class="principle">
+            <div class="pn">03</div>
+            <h3>One liaison, one source of truth</h3>
+            <p>A single point between client and delivery teams, with scope, specs and UAT readiness in shared artefacts everyone plans against.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="transfer" class="section">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <div>
+            <span class="mono-label">Beyond the job title</span>
+            <h2>What the rest of the background adds</h2>
+          </div>
+        </div>
+        <div class="transfer reveal">
+          <div class="row">
+            <div class="from">Master&rsquo;s in Finance</div>
+            <div class="arrow">→</div>
+            <div class="to">Business cases, budgets and benefit tracking that hold up to scrutiny.</div>
+          </div>
+          <div class="row">
+            <div class="from">Lean Six Sigma Green Belt</div>
+            <div class="arrow">→</div>
+            <div class="to">Process improvement that is measured against a baseline, not assumed.</div>
+          </div>
+          <div class="row">
+            <div class="from">SAFe&reg; Agilist &amp; PSM I</div>
+            <div class="arrow">→</div>
+            <div class="to">Agile delivery run inside a governed programme, not instead of one.</div>
+          </div>
+          <div class="row">
+            <div class="from">Business analysis track</div>
+            <div class="arrow">→</div>
+            <div class="to">Comfortable mapping a migration with engineers and writing the spec myself.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <div>
+            <span class="mono-label">About</span>
+            <h2>Commercially minded, governance-driven, close to the detail</h2>
+          </div>
+        </div>
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p>I plan and deliver technology and operations projects &mdash; translating client priorities and cross-functional constraints into project plans, risk registers and a reporting rhythm that keeps delivery on schedule.</p>
+            <p>My background runs from direct operations and business analysis into project management, so I am as comfortable mapping a payment-gateway migration with engineers as I am chairing a steering update or walking a client through UAT readiness. I work the seam where scope, schedule and stakeholders meet, and I keep the artefacts &mdash; WBS, RAID, status &mdash; legible enough that anyone can plan against them.</p>
+            <p>Seven-plus years, a PMP, and a portfolio that has been held to 93% on-time. Next, I want to bring that discipline to a team where delivery predictability is the whole game.</p>
+
+            <div class="timeline">
+              <div class="job">
+                <div class="when">Jan 2024 — Present</div>
+                <div>
+                  <h4>Project Coordinator (Project Management)</h4>
+                  <div class="org">Axslogic</div>
+                  <p>Portfolio of nine client projects: planning, execution, tracking and closure. On-time delivery to 93%; timelines −28%. Owns WBS, RAID logs, FSD/TSD and UAT readiness; primary liaison to Infra, DevOps and ETL.</p>
+                </div>
+              </div>
+              <div class="job">
+                <div class="when">Oct 2021 — Jan 2022</div>
+                <div>
+                  <h4>Senior Manager</h4>
+                  <div class="org">Better.com</div>
+                  <p>Coordinated large-scale initiatives across US and international teams. Resource planning for a 107-member team, utilisation +18%; turnaround −40%; SLA adherence 91%.</p>
+                </div>
+              </div>
+              <div class="job">
+                <div class="when">Jun 2021 — Sep 2021</div>
+                <div>
+                  <h4>Manager</h4>
+                  <div class="org">Better.com</div>
+                  <p>Eight client-focused improvement projects with milestone tracking. Cycle time −2 days; onboarding revamp +31% productivity.</p>
+                </div>
+              </div>
+              <div class="job">
+                <div class="when">Jan 2020 — May 2021</div>
+                <div>
+                  <h4>Senior Team Lead</h4>
+                  <div class="org">Better.com</div>
+                  <p>Created SOPs, user guides and documentation to standardise workflows. QA checks reduced errors by 14%.</p>
+                </div>
+              </div>
+              <div class="job">
+                <div class="when">2017 — 2019</div>
+                <div>
+                  <h4>Team Lead / Analyst</h4>
+                  <div class="org">Better.com</div>
+                  <p>Supported operational delivery through analysis, reporting and process adherence.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal">
+            <div class="portrait">
+              <img id="headshot" alt="Chirag Rathore" hidden>
+              <span id="headshot-ph">Headshot<br>to add</span>
+            </div>
+            <div class="panel">
+              <h3>Tools &amp; practice</h3>
+              <div class="chips">
+                <span class="chip">Project planning &amp; delivery</span>
+                <span class="chip">Agile &amp; Scrum</span>
+                <span class="chip">Stakeholder management</span>
+                <span class="chip">Resource allocation</span>
+                <span class="chip">Risk &amp; issue tracking</span>
+                <span class="chip">Requirements gathering</span>
+                <span class="chip">Status reporting</span>
+                <span class="chip">Process improvement</span>
+                <span class="chip">WBS / RAID</span>
+                <span class="chip">UAT coordination</span>
+              </div>
+            </div>
+            <div class="panel">
+              <h3>Certifications</h3>
+              <ul class="cert-list">
+                <li>Project Management Professional (PMP)&reg; — PMI</li>
+                <li>Professional Scrum Master I (PSM I)</li>
+                <li>SAFe&reg; Agilist</li>
+                <li>Lean Six Sigma Green Belt</li>
+              </ul>
+            </div>
+            <div class="panel">
+              <h3>Education</h3>
+              <ul class="cert-list">
+                <li>Master&rsquo;s in Finance — Hult International Business School, Boston</li>
+                <li>Bachelor&rsquo;s in Financial Management — Western Kentucky University</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="wrap reveal">
+        <span class="mono-label">Contact</span>
+        <h2 style="margin-top:14px">Let&rsquo;s talk about <span class="em">delivery</span></h2>
+        <p>Open to Project Manager and Programme Manager roles &mdash; technology and operations, in Gurugram or remote. Fastest way to reach me is email or LinkedIn.</p>
+        <div class="contact-links">
+          <a class="btn btn-solid" href="mailto:rathore.chirag612@gmail.com">rathore.chirag612@gmail.com</a>
+          <a class="btn btn-ghost" href="#" data-placeholder-link>LinkedIn ↗</a>
+          <a class="btn btn-ghost" href="tel:+919643749366">+91 96437 49366</a>
+        </div>
+        <p style="margin-top:22px; font-size:13px;"><span class="flag">draft</span> &nbsp;LinkedIn URL, a downloadable CV link and a headshot still to add.</p>
+      </div>
+    </section>
+  </main>
+</div>
+
+<div id="case" class="case-view wrap" hidden></div>
+
+<footer>
+  <div class="wrap foot-inner">
+    <span>Chirag Rathore · Project Management · Gurugram, Haryana</span>
+    <nav>
+      <a data-nav="work">Work</a>
+      <a data-nav="method">Method</a>
+      <a data-nav="about">About</a>
+      <a data-nav="contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" type="button">Theme</button>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+
+    var CASES = [
+      {
+        id: 'nine-project-portfolio',
+        idx: '01',
+        eyebrow: 'Case 01 · Delivery & Governance',
+        title: 'A nine-project portfolio held to 93% on-time',
+        cardDesc: 'Nine concurrent client projects with no shared plan structure and delivery slipping. Built structured project plans, a dependency map and a weekly reporting cadence; maintained WBS, RAID logs, functional and technical specs and UAT readiness; acted as the single liaison between clients and Infra, DevOps and ETL teams.',
+        summary: 'Owning planning, tracking and closure across nine concurrent client projects, and building the plan structure, dependency tracking and reporting cadence that lifted on-time delivery to 93% and cut timelines by 28%.',
+        client: 'Axslogic',
+        role: 'Project Coordinator (PM)',
+        period: 'Jan 2024 – Present',
+        channels: 'WBS · RAID · FSD/TSD · UAT',
+        tags: ['WBS', 'RAID', 'FSD / TSD', 'UAT', 'Dependency tracking'],
+        headline: '93% on-time',
+        headlineSub: 'timelines −28%',
+        metrics: [
+          { v: '93%', l: 'On-time delivery, up from a slipping baseline' },
+          { v: '−28%', l: 'Reduction in delivery timelines' },
+          { v: '9', l: 'Concurrent client projects owned end to end' }
+        ],
+        challenge: [
+          'Nine client projects were running at once with no shared plan structure. Each carried its own dependencies across Infra, DevOps and ETL, with the client on one side and the delivery teams on the other, and on-time delivery was slipping.',
+          'There was no single view of where each project stood, so risks surfaced as escalations rather than as items on a log, and status reporting stayed reactive.'
+        ],
+        approach: [
+          { n: '01', t: 'Built a consistent plan structure', b: 'Put every project on the same WBS-and-dependency structure so the critical path and cross-team hand-offs read the same way across the whole portfolio.' },
+          { n: '02', t: 'Made RAID the operating rhythm', b: 'Maintained RAID logs with named owners and dates, reviewed on a fixed weekly cadence, so risks and issues were acted on before they reached a milestone.' },
+          { n: '03', t: 'Tightened the reporting cadence', b: 'Standardised status reporting and a clear escalation path, giving clients and delivery leads the same picture at the same time.' },
+          { n: '04', t: 'Held the specs and UAT line', b: 'Kept functional and technical specification documents and UAT readiness materials as the shared reference, and acted as the single liaison between client and cross-functional teams.' }
+        ],
+        takeaway: 'Most delivery risk is visible weeks early if the plan and the RAID log are honest. The cadence is what turns that visibility into action.'
+      },
+      {
+        id: 'resource-planning-107',
+        idx: '02',
+        eyebrow: 'Case 02 · Resource & SLA Governance',
+        title: 'Resource planning for a 107-person operation',
+        cardDesc: 'Coordinated large-scale initiatives across US and international teams. Rebuilt capacity and resource planning for a 107-member team, tightened turnaround and put SLA tracking in place so commitments were visible before they were missed.',
+        summary: 'Rebuilding capacity and resource planning for a 107-member team spanning US and international time zones — lifting utilisation 18% while cutting turnaround 40% and holding SLA adherence at 91%.',
+        client: 'Better.com',
+        role: 'Senior Manager',
+        period: 'Oct 2021 – Jan 2022',
+        channels: 'Capacity planning · Cross-timezone · SLA',
+        tags: ['Capacity planning', 'Cross-timezone', 'SLA governance'],
+        headline: '+18% utilisation',
+        headlineSub: 'turnaround −40% · SLA 91%',
+        metrics: [
+          { v: '+18%', l: 'Improvement in resource utilisation' },
+          { v: '−40%', l: 'Reduction in turnaround time' },
+          { v: '91%', l: 'SLA adherence held through the change' }
+        ],
+        challenge: [
+          'Large-scale initiatives were being coordinated across US and international teams, with a 107-member group whose capacity was not planned against demand. Utilisation was uneven and turnaround times were long.',
+          'Commitments to internal and external stakeholders were not tracked in a way that showed when an SLA was about to be missed.'
+        ],
+        approach: [
+          { n: '01', t: 'Mapped capacity to demand', b: 'Built resource planning across the full 107-member team so work was allocated against real availability rather than assumption.' },
+          { n: '02', t: 'Coordinated across time zones', b: 'Ran the initiatives across US and international teams with hand-offs planned around the working day rather than against it.' },
+          { n: '03', t: 'Put SLA tracking in place', b: 'Made SLA commitments visible on a cadence so slippage was caught early — adherence held at 91% while turnaround fell 40%.' }
+        ],
+        takeaway: 'Utilisation is a planning problem before it is a people problem. Map capacity to demand honestly and the turnaround numbers follow.'
+      },
+      {
+        id: 'eight-improvement-projects',
+        idx: '03',
+        eyebrow: 'Case 03 · Process Improvement',
+        title: 'Eight improvement projects, run to milestones',
+        cardDesc: 'Eight client-focused improvement projects running in parallel without milestone visibility. Introduced milestone tracking across all eight, optimised the underlying workflows and revamped onboarding.',
+        summary: 'Bringing milestone visibility to eight parallel client-focused improvement projects, optimising the underlying workflows and revamping onboarding — cycle time down two days, onboarding productivity up 31%.',
+        client: 'Better.com',
+        role: 'Manager',
+        period: 'Jun 2021 – Sep 2021',
+        channels: 'Milestone tracking · Workflow · Onboarding',
+        tags: ['Milestone tracking', 'Workflow design', 'Onboarding'],
+        headline: '−2 days cycle time',
+        headlineSub: 'onboarding productivity +31%',
+        metrics: [
+          { v: '8', l: 'Parallel improvement projects coordinated' },
+          { v: '−2 days', l: 'Taken out of cycle time' },
+          { v: '+31%', l: 'Onboarding productivity improvement' }
+        ],
+        challenge: [
+          'Eight client-focused improvement projects were running in parallel without a shared milestone view, so it was hard to tell which were on track and where attention should go.',
+          'Onboarding was slow, holding back how quickly new team members reached productivity.'
+        ],
+        approach: [
+          { n: '01', t: 'Put all eight on milestones', b: 'Introduced milestone tracking across every project so progress and slippage were comparable at a glance.' },
+          { n: '02', t: 'Optimised the workflows', b: 'Reworked the underlying process steps, taking two days out of the cycle time.' },
+          { n: '03', t: 'Revamped onboarding', b: 'Rebuilt the onboarding path, driving a 31% improvement in productivity for people coming into the team.' }
+        ],
+        takeaway: 'Parallel projects need one comparable view of progress. Once milestones are shared, it is obvious where a day of attention is worth most.'
+      },
+      {
+        id: 'sops-and-qa',
+        idx: '04',
+        eyebrow: 'Case 04 · Standardisation & Quality',
+        title: 'Standardising delivery with SOPs and QA',
+        cardDesc: 'Inconsistent workflows and undocumented process were driving quality variance. Created SOPs, user guides and reference documentation, then implemented QA checks to hold the standard.',
+        summary: 'Turning undocumented process into SOPs and user guides, then adding quality-assurance checks that reduced errors by 14%.',
+        client: 'Better.com',
+        role: 'Senior Team Lead',
+        period: 'Jan 2020 – May 2021',
+        channels: 'SOPs · Documentation · QA',
+        tags: ['SOPs', 'Documentation', 'Quality assurance'],
+        headline: '−14% errors',
+        headlineSub: 'standardised workflows',
+        metrics: [
+          { v: '−14%', l: 'Reduction in errors' },
+          { v: 'SOPs', l: 'Written across the core workflows' }
+        ],
+        challenge: [
+          'Workflows varied between people and much of the process was undocumented, which showed up as quality variance and rework.',
+          'There was no consistent checkpoint to catch errors before they reached the next step.'
+        ],
+        approach: [
+          { n: '01', t: 'Documented the process', b: 'Created SOPs, user guides and reference documentation so the same workflow was followed the same way every time.' },
+          { n: '02', t: 'Added QA checks', b: 'Built quality-assurance checks into the process, reducing errors by 14%.' }
+        ],
+        takeaway: 'Standardisation is not bureaucracy when it is written from how the best people already work. The QA check is what keeps it honest.'
+      }
+    ];
+
+    var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]; }); };
+
+    // build the work list
+    var list = document.getElementById('case-list');
+    list.innerHTML = CASES.map(function (c) {
+      return '<a class="case" data-case="' + c.id + '" href="#/case/' + c.id + '">' +
+        '<div class="idx">' + c.idx + '</div>' +
+        '<div>' +
+          '<h3>' + esc(c.title) + '</h3>' +
+          '<div class="meta">' + esc(c.client) + ' · ' + esc(c.role) + ' · ' + esc(c.period) + '</div>' +
+          '<p class="desc">' + esc(c.cardDesc) + '</p>' +
+          '<div class="tags">' + c.tags.map(function (t) { return '<span class="tag">' + esc(t) + '</span>'; }).join('') + '</div>' +
+          '<span class="viewcta">View case study →</span>' +
+        '</div>' +
+        '<div class="headline">' + esc(c.headline) + '<span>' + esc(c.headlineSub) + '</span></div>' +
+      '</a>';
+    }).join('');
+
+    var homeEl = document.getElementById('home');
+    var caseEl = document.getElementById('case');
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function renderCase(id) {
+      var i = CASES.findIndex(function (c) { return c.id === id; });
+      if (i === -1) { location.hash = ''; return; }
+      var c = CASES[i];
+      var next = CASES[(i + 1) % CASES.length];
+      document.title = c.title + ' · Chirag Rathore';
+      caseEl.innerHTML =
+        '<button class="backlink" data-nav="work" type="button">← All work</button>' +
+        '<div class="cv-head">' +
+          '<div class="mono-label">' + esc(c.eyebrow) + '</div>' +
+          '<h1>' + esc(c.title) + '</h1>' +
+          '<p>' + esc(c.summary) + '</p>' +
+        '</div>' +
+        '<div class="cv-meta">' +
+          '<div><div class="k">Company</div><div class="v">' + esc(c.client) + '</div></div>' +
+          '<div><div class="k">Role</div><div class="v">' + esc(c.role) + '</div></div>' +
+          '<div><div class="k">Period</div><div class="v">' + esc(c.period) + '</div></div>' +
+          '<div><div class="k">Focus</div><div class="v">' + esc(c.channels) + '</div></div>' +
+        '</div>' +
+        '<div class="cv-metrics">' + c.metrics.map(function (m) {
+          return '<div class="m"><div class="mv">' + esc(m.v) + '</div><div class="ml">' + esc(m.l) + '</div></div>';
+        }).join('') + '</div>' +
+        '<div class="cv-block"><h2>The challenge</h2><div class="body">' +
+          c.challenge.map(function (p) { return '<p>' + esc(p) + '</p>'; }).join('') +
+        '</div></div>' +
+        '<div class="cv-block"><h2>The approach</h2><div class="steps">' +
+          c.approach.map(function (s) {
+            return '<div class="step"><div class="sn">' + esc(s.n) + '</div><div><h3>' + esc(s.t) + '</h3><p>' + esc(s.b) + '</p></div></div>';
+          }).join('') +
+        '</div></div>' +
+        '<div class="cv-block"><h2>Takeaway</h2><div class="body"><p class="takeaway">' + esc(c.takeaway) + '</p></div></div>' +
+        '<div class="cv-foot">' +
+          '<button data-nav="work" type="button">← Back to all work</button>' +
+          '<button data-case="' + next.id + '" type="button">Next: ' + esc(next.headline) + ' →</button>' +
+        '</div>';
+      homeEl.hidden = true;
+      caseEl.hidden = false;
+      window.scrollTo(0, 0);
+    }
+
+    function showHome(sectionId) {
+      caseEl.hidden = true;
+      homeEl.hidden = false;
+      document.title = 'Chirag Rathore Portfolio';
+      if (sectionId && sectionId !== 'home') {
+        var el = document.getElementById(sectionId);
+        if (el) { el.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' }); return; }
+      }
+      window.scrollTo(0, 0);
+    }
+
+    function route() {
+      var h = location.hash || '';
+      var m = h.match(/^#\/case\/(.+)$/);
+      if (m) { renderCase(m[1]); }
+      else { showHome(); }
+    }
+
+    // intercept data-nav and data-case clicks
+    document.addEventListener('click', function (e) {
+      var navT = e.target.closest('[data-nav]');
+      if (navT) {
+        e.preventDefault();
+        var links = document.querySelector('.nav-links');
+        var toggle = document.querySelector('.nav-toggle');
+        if (links) { links.classList.remove('open'); }
+        if (toggle) { toggle.setAttribute('aria-expanded', 'false'); }
+        var dest = navT.getAttribute('data-nav');
+        if (location.hash) { history.pushState('', '', location.pathname + location.search); }
+        showHome(dest);
+        return;
+      }
+      var caseT = e.target.closest('[data-case]');
+      if (caseT) {
+        e.preventDefault();
+        location.hash = '#/case/' + caseT.getAttribute('data-case');
+      }
+    });
+
+    window.addEventListener('hashchange', route);
+    route();
+
+    // theme toggle: system -> light -> dark -> system
+    var tbtn = document.querySelector('.theme-toggle');
+    if (tbtn) {
+      try {
+        var saved = localStorage.getItem('cr-theme');
+        if (saved) { root.setAttribute('data-theme', saved); }
+      } catch (e) {}
+      tbtn.addEventListener('click', function () {
+        var cur = root.getAttribute('data-theme');
+        var nextT = cur === 'light' ? 'dark' : (cur === 'dark' ? '' : 'light');
+        if (nextT) { root.setAttribute('data-theme', nextT); } else { root.removeAttribute('data-theme'); }
+        try { localStorage.setItem('cr-theme', nextT); } catch (e) {}
+      });
+    }
+
+    // mobile nav
+    var toggle = document.querySelector('.nav-toggle');
+    var links = document.querySelector('.nav-links');
+    if (toggle && links) {
+      toggle.addEventListener('click', function () {
+        var open = links.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    }
+
+    document.querySelectorAll('[data-placeholder-link]').forEach(function (a) {
+      a.addEventListener('click', function (e) { e.preventDefault(); });
+    });
+
+    // reveal on scroll
+    var items = document.querySelectorAll('.reveal');
+    if (reduce || !('IntersectionObserver' in window)) {
+      items.forEach(function (el) { el.classList.add('in'); });
+    } else {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+        });
+      }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+      items.forEach(function (el) { io.observe(el); });
+    }
+
+    // active nav link on scroll
+    var navLinks = Array.prototype.slice.call(document.querySelectorAll('.nav-links a[data-nav]'));
+    function onScroll() {
+      if (!homeEl || homeEl.hidden) { navLinks.forEach(function (a) { a.classList.remove('active'); }); return; }
+      var y = window.scrollY + 130;
+      var current = '';
+      navLinks.forEach(function (a) {
+        var s = document.getElementById(a.getAttribute('data-nav'));
+        if (s && s.offsetTop <= y) { current = a.getAttribute('data-nav'); }
+      });
+      navLinks.forEach(function (a) { a.classList.toggle('active', a.getAttribute('data-nav') === current); });
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  })();
+</script>
+
+</body></html>
