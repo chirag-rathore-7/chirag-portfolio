@@ -32,8 +32,8 @@ There is no single-page routing anymore; each nav item is its own file.
   footer. Change all pages if you add or rename an item. The current page's link
   carries `class="active"`.
 - **Look and feel** — all styling is in `assets/styles.css`.
-- **LinkedIn** — search for `data-placeholder-link` (nav and contact page). Replace
-  `href="#"` with the real URL and remove the `data-placeholder-link` attribute.
+- **LinkedIn** — the profile URL is set in the nav of every page and on the contact page.
+  Search for `linkedin.com` to change it everywhere.
 - **Headshot** — in `about.html`, set `src` on the `#headshot` `<img>` and remove its
   `hidden` attribute.
 
