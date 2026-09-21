@@ -34,8 +34,8 @@ There is no single-page routing anymore; each nav item is its own file.
 - **Look and feel** — all styling is in `assets/styles.css`.
 - **LinkedIn** — the profile URL is set in the nav of every page and on the contact page.
   Search for `linkedin.com` to change it everywhere.
-- **Headshot** — in `about.html`, set `src` on the `#headshot` `<img>` and remove its
-  `hidden` attribute.
+- **Headshot** — `assets/headshot.jpg`, shown in the portrait box on `about.html`. Replace
+  the file (same name) to change it.
 
 ## Local preview
 
